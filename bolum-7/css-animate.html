@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #333;
+        }
+        .box{
+            background-color: darkred;
+            width: 150px;
+            height: 150px;
+
+            /* animation-name: a1;
+            animation-duration: 5s; */
+            /* animation-iteration-count: 2; */
+            /* sonsuz tekrar */
+            /* animation-iteration-count: infinite; */
+            /* tekrar sayisi kadar gider ve sbt kalir */
+            /* animation-fill-mode: forwards; */
+            /* 2s bekler ve animasyonu oynatir */
+            /* animation-delay: 2s ; */
+            /* animasyonun son halinden geriye sarar */
+            /* animation-direction: alternate-reverse; */
+            /* yavas girip hizlanir */
+            /* animation-timing-function: ease-in; */
+            /* ortada hizlanir */
+            /* animation-timing-function: ease-in-out; */
+
+            /* 2s duraksama */
+            animation: a1 4s forwards 2s ease-in;
+        }
+        @keyframes a1 {
+            to{
+                width:500px ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
