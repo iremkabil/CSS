@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* em kapsayici eleman uzerinden islem yapar */
+        /* rem root elemet uzerinden yapar */
+        /* #kutu-1{
+            font-size: 20px;
+        }
+
+        #kutu-1 p{
+            font-size: 1.5em;
+            padding: 1em;
+        }
+
+        #kutu-1 p{
+            font-size: 2rem;
+        } */
+
+        html{
+            font-size: 10px;
+        }
+
+        body{
+            font-size: 1.6rem;
+        }
+
+        @media (min-width:576px){
+            html{
+                font-size: 12px;
+            }
+            #kutu-1 h2{
+                font-size: 1.8rem;
+            }
+        }
+
+        @media (min-width:768px){
+            html{
+                font-size: 14px;
+            }
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="kutu-1">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti placeat debitis at. Placeat non praesentium cum perspiciatis esse cumque illo laboriosam, quod laborum atque voluptate, debitis eius similique porro tenetur?</p>
+    </div>
+    <div id="kutu-2">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti placeat debitis at. Placeat non praesentium cum perspiciatis esse cumque illo laboriosam, quod laborum atque voluptate, debitis eius similique porro tenetur?</p>
+    </div>
+</body>
+</html>

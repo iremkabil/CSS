@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        /*
+        Attribute selector
+        a etiketlerinden target attribute u tanımlı olanlara ulas 
+        */
+        /* a[target] {
+            background-color: red;
+        }
+
+        tum classlar icin - boylece span ı da dahil eder
+        [class] {
+            background-color: blue;
+        } */
+
+        /* 
+        Attribute value selector 
+        */
+        /* a[class="active"] {
+            background-color: blue;
+        }  */
+        
+        /* Attribute '*' selector 
+         
+        icinde active class i olan tum elemanlari alir farkli classlar da olabilir 
+        bosluk onemsiz
+        active-span ı da alir
+        
+        */
+        /* [class*="active"] {
+            background-color: blue;
+        } */
+
+        /*
+        Attribute '~' selector
+        bosluklar onemli sadece activ i alir
+         */
+
+        /* [class~="active"] {
+            background-color: blue;
+        } */
+
+
+        /* 
+        Attribute '|' selector 
+        active class i da sadece basta olanlar secilir
+        birden fazla class varsa active- kullanimi olmali
+        tek class ise - sart degil
+        bosluk onemli
+        */
+
+        /* [class|="active"] {
+            background-color: blue;
+        } */
+
+        /* 
+        Attribute '^' selector  
+        active class i da sadece basta olanlar secilir
+        active ile baslayayip bosluklarla diger classlardan ayrilabilir
+        */
+
+        /* [class^="active"] {
+            background-color: blue;
+        } */
+
+        /*
+        Attribute '$' selector 
+        active sonda olmali
+        */
+        /* [class$="active"] {
+            background-color: red;
+        } */
+
+    </style>
+
+</head>
+<body>
+    
+    <span class="active text">text</span>
+    <nav>
+        <a href="#" target="_blank">Home</a>
+        <a href="#" class="active">active</a>
+        <a href="#" class="link">contact</a>
+    </nav>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'EB Garamond', serif;
+    display: block;
+}
+.row{
+    margin-top: 40px;
+}
+
+/* clearfix yerine kullandik */ 
+/* 5 saat aradigin hata : bütün divlerin top noktası how_it_works 'teydi */
+.row::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.col-3{
+    /* alt alta olmasını engeller yan yana koyar */
+    width: 33.3%;
+    float: left;
+}
+.col-2{
+    width: 50%;
+    float: left;
+}
+.clearfix::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.container{
+    /* sagdan soldan esit bosluk birakir */
+    margin:0 auto;
+    width: 1000px;
+}
+.img-fluid{
+    width: 100%;
+}
+
+@media (min-width: 576px) { 
+    .container {
+        margin: 0 auto;
+        width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        margin: 0 auto;
+        width: 720px;
+    }
+}
+
+@media (min-width: 992px) { 
+    .container {
+        margin: 0 auto;
+        width: 960px;
+    }
+ }
+
+@media (min-width: 1200px) { 
+    .container {
+        margin: 0 auto;
+        width: 1140px;
+    }
+ }
+
+@media (min-width: 1400px) { 
+    .container {
+        margin: 0 auto;
+        width: 1320px;
+    }
+ }
