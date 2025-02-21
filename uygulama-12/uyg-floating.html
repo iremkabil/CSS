@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         *{
+            box-sizing: border-box;
+        }
+        header, footer{
+            background-color:#D2DAFF ;
+            padding: 15px;
+        }
+        .col{
+            float: left;
+            padding: 15px 15px 15px 0;
+        }
+        .menu{
+            width: 25%;
+        }
+        .menu ul{
+            list-style:none;
+            margin: 0px;
+            padding: 0px;
+        }
+        .menu li{
+            color: #D2DAFF;
+            background-color: blueviolet;
+            padding: 8px;
+            margin-bottom: 8px;
+        }
+        .menu li:hover{
+            background-color: #D2DAFF;
+            color: blueviolet;
+            /* fare sekli */
+            cursor: pointer;
+        }
+        .content{
+            width: 75%;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+       
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <div>
+            <h2>Header</h2>
+        </div>
+    </header>
+    <main class="clearfix">
+        <div class="menu col">
+            <ul>
+                <li>Html</li>
+                <li>Css</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+        <div class="content col">
+            <h2>Komple Web Geliştirme Eğitimi</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi maiores voluptas doloremque. Itaque beatae aut similique ipsa eum molestias totam soluta odit nisi provident dolorum, dolorem voluptatem fuga praesentium officiis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi maiores voluptas doloremque. Itaque beatae aut similique ipsa eum molestias totam soluta odit nisi provident dolorum, dolorem voluptatem fuga praesentium officiis.</p>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <h2>Footer</h2>
+        </div>
+    </footer>
+
+</body>
+</html>
